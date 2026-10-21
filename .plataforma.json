@@ -1,0 +1,36 @@
+{
+  "nome": "teste",
+  "check": "checks",
+  "tipos": {
+    "codigo": "Código do repo: scripts, testes, CI, infraestrutura",
+    "docs": "Documentação: decisões, runbooks, README",
+    "pesquisa": "Pergunta, análise ou parecer sem mudança no repo"
+  },
+  "tipo_re": [
+    [
+      "codigo",
+      "script|python|\\.py\\b|node|\\bci\\b|workflow|teste|bug|corrigir|implementar"
+    ],
+    [
+      "docs",
+      "\\bdoc|documenta|runbook|decisao|readme"
+    ],
+    [
+      "pesquisa",
+      "\\?\\s*$|por que|explique|como funciona|analise|parecer|compare"
+    ]
+  ],
+  "areas": {
+    "codigo": "codigo",
+    "docs": "docs"
+  },
+  "estruturais": [
+    ".claude/",
+    ".github/",
+    ".ai-kit/",
+    "CLAUDE.md",
+    ".plataforma.json",
+    ".gitignore"
+  ],
+  "verificacao": "a suíte de testes do repo"
+}
